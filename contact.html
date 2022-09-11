@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <title>ML Strength - Health and Fitness</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>ML Strength Health and Fitness</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="main.css">
   </head>
   <header>
   <body>
     <nav>
-      <div class="logo">
-        <h4><a href="index.html">ML Strength</a></h4>
-      </div>
+      <section class="logo">
+        <h1><a href="index.html">ML Strength</a></h1>
+      </section>
       <ul class="nav-links">
         <li><a href="why.html">Why ML Strength</a></li>
         <li><a href="classes.html">Classes</a></li>
@@ -27,39 +26,43 @@
     </nav>
   </header>
   <body>
-    <div class="contact-form">
+    <section class="contact-form">
       <h1>Contact us</h1>
-      <div class="form">
-        <label>Full Name :</label>
-        <input type="text" name="" value="" placeholder="Enter Your Name">
-      </div>
-      <div class="form">
-        <label>Email :</label>
-        <input type="email" name="" value="" placeholder="Enter Your Email">
-      </div>
-      <div class="form">
-        <label>Phone Number :</label>
-        <input type="text" name="" value="" placeholder="Enter Your Phone Number">
-      </div>
-      <div class="form">
-        <label>Message :</label>
-        <textarea></textarea>
-      </div>
-      <a href="" class="button">Submit</a>
-    </div>
+      <form>
+        <p>Name : </p>
+        <label for="fname">First name</label><br>
+        <input type="text" id="frame" name="fname"><br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lrame" name="lname">
+      </form>
+      <form action="/action_page.php">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        </form>        
+      <form>
+        <label for="phone">Enter your phone number: </label>
+        <input type="tel" id="phone" name="phone" placeholder="1234-567-890">
+      </form>
+      <form>
+        <label type="message">Message: </label>
+        <textarea rows="5" cols="50" name="message" form="message">Message here!</textarea>
+      </form>
+      <input type="submit" value="Submit">
+    </section>
     
     <script src="main.js"></script>
-  </body>
   <footer>
-    <nav>
-      <div class="logo">
-        <h4><a href="index.html">ML Strength</a></h4>
-      </div>
-      <ul class="footer-menu">
-        <li><a href="contact.html">Contact us</a></li>
-        <li><a href="join.html">Join now</a></li>
-      </ul>
-    </nav>
+      <section class="logo">
+        <h2><a href="index.html">ML Strength</a></h2>
+      </section>section>
     <small>&copy;2022 ML Strenght</small>
+    <a href="https://www.w3.org/WAI/WCAG2AA-Conformance"
+   title="Explanation of WCAG 2 Level AA conformance">
+  <img height="32" width="88"
+       src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-v"
+       alt="Level AA conformance,
+            W3C WAI Web Content Accessibility Guidelines 2.1">
+</a>
   </footer>
+  </body>
 </html>
