@@ -29,34 +29,34 @@
       <form>
         <p>Name : </p>
         <label for="fname">First name</label><br>
-        <input type="text" id="frame" name="fname"><br>
+        <input type="text" id="fname" value="" name="fname" required maxlength="20"><br>
         <label for="lname">Last name</label><br>
-        <input type="text" id="lrame" name="lname">
+        <input type="text" id="lname" value="" name="lname" required maxlength="20">
       </form>
       <form>
         <p>Gender : </p>
         <input type="radio" id="male" name="gender" value="MALE">
-        <label for="male">MALE</label><br>
+        <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender" value="FEMALE">
-        <label for="femlae">FEMALE</label><br>
+        <label for="femlae">Female</label><br>
         <input type="radio" id="nottosay" name="gender" value="NOTTOSAY">
-        <label for="nottoday">I PREFER NOT TO SAY</label>
+        <label for="nottoday">I prefer not to say</label>
       </form>
-      <form action="/action_page.php">
-        <label for="email">Enter your email:</label>
-        <input type="email" id="email" name="email">
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="" required>
         </form>        
       <form>
-        <label for="phone">Enter your phone number: </label>
-        <input type="tel" id="phone" name="phone" placeholder="1234-567-890">
+        <label for="phone">Phone number: </label>
+        <input type="tel" id="phone" name="phone" placeholder="1234-567-890" value="" required>
       </form>
       <form>
         <label for="birthday">Date of Birth :</label>
-        <input type="date" id="birthday" name="birthday" required pattern="¥d{2}-¥d{2}-¥d{4}" max="31-12-9999">
+        <input type="date" id="birthday" name="birthday" required pattern="¥d{2}-¥d{2}-¥d{4}" max="31-12-9999" value="" required>
       </form>
-      <form action="/action_page.php">
+      <form>
         <label for="places">Choose a place</label>
-        <select id="places" name="places">
+        <select id="places" name="places" required>
           <option value="Ashgrove">Ashgrove</option>
           <option value="Brisbane City">Brisbane City</option>
           <option value="Chermside">Chermside</option>
@@ -69,7 +69,7 @@
         <input type="radio" id="YES" name="question" value="YES">
         <label for="YES">YES!!</label><br>
         <input type="radio" id="NO" name="question" value="NO">
-        <label for="NO">NO</label><br>
+        <label for="NO">No</label><br>
       </form>
       <input type="submit" value="Submit">
       <div id="overlay" onclick=off()>
