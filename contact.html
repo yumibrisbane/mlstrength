@@ -9,57 +9,63 @@
   </head>
   <body>
     <header>
-      <div class="topnav" id="topnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="why.html">Why ML Strength</a>
-        <a href="classes.html">Classes</a>
-        <a href="contact.html">Contact us</a>
-        <a href="join.html" class="split">Join now</a>
-        <a class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i></a>
-      </div>
+      <nav>
+        <ul class="topnav" id="topnav">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="why.html">Why ML Strength</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="join.html" class="split">Join now</a></li>
+          <li><a class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a></li>
+        </ul>
+      </nav>
   </header>
+   <main>
     <section class="contact-form">
       <h1>Contact us</h1>
-      <form>
-        <p>Name : </p>
-        <label for="fname">First name</label><br>
-        <input type="text" id="fname" name="fname" value="" required maxlength="20"><br>
-        <label for="lname">Last name</label><br>
-        <input type="text" id="lname" name="lname" value="" required maxlength="20">
+      <form class="form-name">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" id="name" name="name" placeholder="Name" value="" maxlength="20" required>
+        <label for="name"></label>
       </form>
-      <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="" required>
+      <form class="form-email">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Email"  pattern="^[a-zA-Z0-9_.+-]+@gmail.com$" value="" required>
+        <label for="email"></label>
+        <span class="error-message">Enter a valid email ending with @gmail.com</span>
+      <span class="success-message">Email correct</span>
         </form>        
-      <form>
-        <label for="phone">Phone number: </label>
-        <input type="tel" id="phone" name="phone" placeholder="1234-567-890" value="" required>
+        <form class="form-phone">
+          <i class="fa-solid fa-phone"></i>
+          <input type="tel" id="phone" name="phone" placeholder="Phone" value="" required>
+          <label for="phone"></label>
+        </form>
+      <form class="form-comment">
+        <i class="fa-solid fa-message"></i>
+        <textarea name="comment" id="comment" placeholder="Leave a comment here" rows="4" cols="40"></textarea>
+        <label for="comment"></label>
       </form>
-      <form>
-        <label for="comment">Comment: </label>
-        <textarea name="comment" id="comment" rows="4" cols="50" required>
-        </textarea>
-      </form>
-      <input type="submit" value="Submit">
+      <button type="submit" value="Submit">Subimt</button>
     </section>
-    <script src="main.js"></script>
-  <footer>
-    <div class="topnav">
-      <a href="index.html" class="active">Home</a>
-      <a href="why.html">Why ML Strength</a>
-      <a href="classes.html">Classes</a>
-      <a href="contact.html">Contact us</a>
-      <a href="join.html" class="split">Join now</a>
-    </div>
-    <small>&copy;2022 ML Strenght</small>
-    <a href="https://www.w3.org/WAI/WCAG2AA-Conformance"
-   title="Explanation of WCAG 2 Level AA conformance">
-  <img height="32" width="88"
-       src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-v"
-       alt="Level AA conformance,
-            W3C WAI Web Content Accessibility Guidelines 2.1">
-</a>
-  </footer>
+   </main>
+    <footer>
+      <ul class="topnav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="why.html">Why ML Strength</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="join.html" class="split">Join now</a></li>
+      </ul>
+      <small>&copy;2022 ML Strenght</small>
+      <a href="https://www.w3.org/WAI/WCAG2AA-Conformance"
+       title="Explanation of WCAG 2 Level AA conformance">
+        <img height="32" width="88"
+         src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-v"
+         alt="Level AA conformance,
+              W3C WAI Web Content Accessibility Guidelines 2.1">
+              </a>
+     </footer>
+     <script src="main.js"></script>
   </body>
 </html>
