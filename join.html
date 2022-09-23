@@ -21,40 +21,40 @@
         </ul>
       </nav>
   </header>
+  <main>
     <section class="contact-form">
       <h1>Become a member</h1>
       <p>We are a Brisbane based company with clubs at Ashgrove, Brisbane City, Chermside, Graceville and Westlake.</p>
-      <form>
-        <p>Name : </p>
-        <label for="fname">First name</label><br>
-        <input type="text" id="fname" name="fname" value="" required maxlength="20"><br>
-        <label for="lname">Last name</label><br>
-        <input type="text" id="lname" name="lname" value="" required maxlength="20">
+      <form class="form-name">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" id="name" name="name" placeholder="Name" value="" required maxlength="20">
+        <label for="name"></label>
       </form>
       <form>
-        <p>Gender : </p>
-        <input type="radio" id="male" name="gender" value="MALE">
-        <label for="male">Male</label><br>
+        <input type="radio" id="male"name="gender" value="MALE">
+        <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="FEMALE">
-        <label for="female">Female</label><br>
+        <label for="female">Female</label>
         <input type="radio" id="nottosay" name="gender" value="NOTTOSAY">
         <label for="nottosay">I prefer not to say</label>
       </form>
-      <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="" required>
+      <form class="form-email">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Email" value="" required>
+        <label for="email"></label>
         </form>        
-      <form>
-        <label for="phone">Phone number: </label>
-        <input type="tel" id="phone" name="phone" placeholder="1234-567-890" value="" required>
+      <form class="form-phone">
+        <i class="fa-solid fa-phone"></i>
+        <input type="tel" id="phone" name="phone" placeholder="Phone" value="" required>
+        <label for="phone"></label>
       </form>
       <form>
-        <label for="birthday">Date of Birth :</label>
-        <input type="date" id="birthday" name="birthday" required>
+        <label for="birthday">Date of Birth</label>
+        <input type="date" id="birthday" name="birthday">
       </form>
       <form>
         <label for="places">Choose a place</label>
-        <select name="places" id="places" required>
+        <select name="places" id="places">
           <option value="">--Please choose a place--</option>
           <option value="Ashgrove">Ashgrove</option>
           <option value="Brisbane City">Brisbane City</option>
@@ -66,18 +66,18 @@
       <form>
         <p>Have you been in a gym before?</p>
         <input type="radio" id="YES" name="question" value="YES">
-        <label for="YES">YES!!</label><br>
+        <label for="YES">YES!!</label>
         <input type="radio" id="NO" name="question" value="NO">
-        <label for="NO">No</label><br>
+        <label for="NO">No</label>
       </form>
-      <input type="submit" value="Submit">
+      <button type="submit" value="Submit">Subimt</button>
       <section id="overlay" onclick=off()>
        <video src="video.mp4" controls>
        </section>
       </div>
       <button onclick="on()">Help Here</button>
     </section>
-    <script src="main.js"></script>
+    </main>
     <footer>
       <ul class="topnav">
         <li><a href="index.html" class="active">Home</a></li>
@@ -95,5 +95,6 @@
               W3C WAI Web Content Accessibility Guidelines 2.1">
               </a>
      </footer>
+     <script src="main.js"></script>
   </body>
 </html>
