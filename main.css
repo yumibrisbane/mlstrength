@@ -173,7 +173,37 @@ form {
   background: none;
   outline: none;
 }
-.frame p {
+input {
+  padding-left: 20px;
+}
+.form-name i{
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 1px;
+  color: #666;
+}
+.form-email i{
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 1px;
+  color: #666;
+}
+.form-phone i{
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 1px;
+  color: #666;
+}
+.form-comment i{
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 1px;
+  color: #666;
+}
+textarea {
+  padding-left: 25px;
+}
+.name p {
   border: solid 5px lightgray;
   text-align: center;
   margin-right: 10%;
@@ -181,6 +211,51 @@ form {
 }
 .button {
   color: black;
+}
+input:checked {
+  width: 20px;
+  height: 20px;
+}
+input:required{
+  box-shadow:3px 3px 4px 0px rgba(220,220,220,1);
+  border:1px solid gray;
+ }
+.error-message,
+.success-message {
+  display: none;
+}
+input:focus {
+  border: 2px solid black;
+  background-color: #ffffe0;
+}
+
+input:optional {
+  background-color: 2px solid var(--yellow);
+}
+
+.error-message {
+  color: var(--red);
+}
+
+.success-message {
+  color: var(--green);
+}
+
+input:not(:placeholder-shown):not(:focus):valid {
+  border: 2px solid var(--green);
+}
+input:not(:placeholder-shown):not(:focus):invalid {
+  border: 2px solid var(--red);
+}
+input:not(:placeholder-shown):not(:focus):invalid + .error-message,
+input:not(:placeholder-shown):not(:focus):valid
+  + .error-message
+  + .success-message {
+  display: block;
+}
+:required+label::before{
+  content: "*";
+  color: red;
 }
 #overlay {
   position: fixed;
